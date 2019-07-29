@@ -17,7 +17,7 @@ namespace OOP_BankingProject {
             MM.Name = "MoneyMarket 1";
             MM.Deposit(100);
             MM.MMIntRate = 0.10;
-            MM.PayInterestMM(12);
+            MM.PayInterest(12);
 
             Account[] accounts = new Account[] { sav1, MM };
 
