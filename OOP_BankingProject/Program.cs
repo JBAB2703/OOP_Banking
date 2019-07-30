@@ -19,18 +19,19 @@ namespace OOP_BankingProject {
             MM.MMIntRate = 0.10;
             MM.PayInterest(12);
 
-            Account[] accounts = new Account[] { sav1, MM };
+            Checking check1 = new Checking();
+            check1.Number = "CHECK001";
+            check1.Name = "My checking account";
+            check1.Deposit(100);
+            check1.Pay(100, 20);
 
-            foreach(Account acct in accounts) {
+
+            Account[] accounts = new Account[] { sav1, MM, check1 }; //Example of Polymorphism
+
+            foreach(Account acct in accounts) { // Example of Polymorphism
                 Console.WriteLine(acct.Print());
             }
 
-            Console.WriteLine(sav1.Print());
-            Console.WriteLine(MM.Print());
-
-            bool ItWorked = MM.TransferTo(sav1, 150);
-            Console.WriteLine($"MoneyMarket balance is {MM.GetBalance()}");
-            Console.WriteLine($"Saving1 balance is {sav1.GetBalance()}");
 
             /*
             Savings sav = new Savings();

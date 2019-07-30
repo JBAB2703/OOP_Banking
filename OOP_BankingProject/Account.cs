@@ -11,7 +11,7 @@ namespace OOP_BankingProject {
         public string Name { get; set; }
         public bool IsActive { get; set; } = true;
 
-        public virtual string Print() {
+        public virtual string Print() {  // Example of Polymorphism
             return $"{this.Number} | {this.Balance} | {this.Name}";
         }
 

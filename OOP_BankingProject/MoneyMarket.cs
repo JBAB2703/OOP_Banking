@@ -7,7 +7,7 @@ namespace OOP_BankingProject {
 
         public double MMIntRate { get; set; } = .03;
 
-        public override string Print() {
+        public override string Print() {  //Example of Polymorphism
             return base.Print() + $" | {MMIntRate}";
         }
         public void PayInterest(int months) {

@@ -15,7 +15,7 @@ namespace OOP_BankingProject {
             return true;
         }
 
-        public override string Print() {
+        public override string Print() { // Example of Polymorphism
             return base.Print() + $" | {IntRate}";
         }
 
